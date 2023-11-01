@@ -1,0 +1,34 @@
+<web-app>   
+<!-- Program p7_c1.java -->
+    <servlet>
+        <servlet-name>p7_c1</servlet-name>
+        <servlet-class>p7_c1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p7_c1</servlet-name>
+        <url-pattern>/cookieC1</url-pattern>
+    </servlet-mapping>
+<!-- Program p7_c2.java -->
+    <servlet>
+        <servlet-name>p7_c2</servlet-name>
+        <servlet-class>p7_c2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p7_c2</servlet-name>
+        <url-pattern>/cookieC2</url-pattern>
+    </servlet-mapping>
+
+<!-- Program Db.java -->
+    <servlet>
+        <servlet-name>Db</servlet-name>
+        <servlet-class>Db</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Db</servlet-name>
+        <url-pattern>/Db</url-pattern>
+    </servlet-mapping>
+
+</web-app>
