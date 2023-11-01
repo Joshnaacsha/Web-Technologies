@@ -1,0 +1,44 @@
+/* Style for the signup container */
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for form elements */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(245, 94, 94);
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: rosybrown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(255, 113, 113);
+}
+
+/* Style for error message (hidden by default) */
+#error-message {
+  color: red;
+  display: none;
+}
