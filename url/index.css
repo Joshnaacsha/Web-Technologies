@@ -1,0 +1,39 @@
+/* Add CSS styles to control the layout */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header {
+    background-color: rosybrown;
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  iframe#index-iframe {
+    width: 25%;
+    border: none; /* Remove iframe border */
+    background-color: rgb(208, 216, 255)
+  }
+  
+  iframe#content-iframe {
+    flex-grow: 1;
+    border: none; /* Remove iframe border */
+  }
+  
+  footer {
+    background-color: rosybrown;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

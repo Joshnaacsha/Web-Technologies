@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          pattern="[A-Za-z ]+"
+          required
+        />
+
+        <label for="regNo">Registration Number:</label>
+        <input
+          type="text"
+          id="regNo"
+          name="regNo"
+          pattern="[0-9]{7}"
+          required
+        />
+
+        <label for="year">Year of Study:</label>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          min="1"
+          max="9999"
+          required
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="mobile">Mobile Number:</label>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          pattern="[0-9]{10}"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.getElementById("registrationForm");
+      form.addEventListener("submit", function (event) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        const passwordPattern =
+          /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+        const nameInput = document.getElementById("name");
+        const regNoInput = document.getElementById("regNo");
+        const yearInput = document.getElementById("year");
+        const mobileInput = document.getElementById("mobile");
+        const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+
+        if (!/^[A-Za-z ]+$/.test(nameInput.value)) {
+          event.preventDefault();
+          alert("Name should contain only letters.");
+        }
+
+        if (!/^\d{7}$/.test(regNoInput.value)) {
+          event.preventDefault();
+          alert("Registration Number should be a 7-digit number.");
+        }
+
+        if (!/^\d{4}$/.test(yearInput.value)) {
+          event.preventDefault();
+          alert("Year of Study should be a 4-digit number.");
+        }
+
+        if (!/^\d{10}$/.test(mobileInput.value)) {
+          event.preventDefault();
+          alert("Mobile Number should be a 10-digit number.");
+        }
+
+        if (!emailPattern.test(emailInput.value)) {
+          event.preventDefault();
+          alert("Please enter a valid email address.");
+        }
+
+        if (!passwordPattern.test(passwordInput.value)) {
+          event.preventDefault();
+          alert(
+            "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character."
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
