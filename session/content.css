@@ -1,0 +1,41 @@
+/* Apply styles to the body to set a background color or image */
+body {
+    background-color: #f5f5f5; /* Change this to the desired background color */
+    /* To use a background image, replace the background-color property with:
+    background-image: url('background.jpg');
+    background-size: cover; */
+  }
+  
+  /* Apply styles to the main content */
+  .main-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* Background color for the content area */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle depth effect */
+  }
+  
+  /* Style the heading */
+  .main-content h2 {
+    font-size: 24px;
+    color: #333; /* Text color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Style the images */
+  .main-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  /* Style the paragraphs */
+  .main-content p {
+    font-size: 16px;
+    color: #555; /* Text color for the paragraphs */
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
