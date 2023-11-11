@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+    <recipe>
+        <name>Spaghetti Bolognese</name>
+        <ingredients>
+            <ingredient>500g ground beef</ingredient>
+            <ingredient>1 onion, chopped</ingredient>
+            <ingredient>2 cloves garlic, minced</ingredient>
+            <ingredient>1 can crushed tomatoes</ingredient>
+            <ingredient>1 teaspoon dried oregano</ingredient>
+            <ingredient>Salt and pepper to taste</ingredient>
+        </ingredients>
+        <instructions>
+            <step>Cook the ground beef in a large pan until browned.</step>
+            <step>Add chopped onions and minced garlic. Cook until onions are soft.</step>
+            <step>Stir in crushed tomatoes, oregano, salt, and pepper. Simmer for 20 minutes.</step>
+            <step>Serve over cooked spaghetti.</step>
+        </instructions>
+    </recipe>
+</recipes>
