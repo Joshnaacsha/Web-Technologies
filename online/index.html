@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background-image: url('image1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color:rgb(122, 4, 4);
+        }
+        p {
+            font-weight: bold;
+            color:rgba(151, 9, 161, 0.664);
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color:rgba(149, 0, 160, 0.664);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        li{
+            color:rgb(37, 0, 139);
+        }
+    </style>
+</head>
+<body>
+    <form action="examservlet" method="post">
+        <h2>WELCOME TO THE QUIZ!</h2>
+        <ul>
+            <b>
+            <li>The quiz consists of 20 questions</li>
+            <li>Answer all the questions</li>
+            <li>Every correct answer carries 1 mark </li>
+            <li>Every incorrect answers carry 0 mark</li>
+            </b>
+        </ul>
+        
+        <p>Question 1: Internet was started in India on ?</p>
+        <input type="radio" name="answer1" value="A" required> 9th August, 1996<br>
+        <input type="radio" name="answer1" value="B" required> 8th August, 1994<br>
+        <input type="radio" name="answer1" value="C" required> 15th August, 1995<br>
+        <input type="radio" name="answer1" value="D" required> 11th August, 1995<br><br>
+        <p>Question 2: What is an URL?</p>
+        <input type="radio" name="answer2" value="A" required> A web browser<br>
+        <input type="radio" name="answer2" value="B" required> Searching engines<br>
+        <input type="radio" name="answer2" value="C" required> Address of the web page displayed on the internet<br>
+        <input type="radio" name="answer2" value="D" required> A computer software<br><br>
+        <p>Question 3: What is the full form of ICANN?</p>
+        <input type="radio" name="answer3" value="A" required> The Internet Corporation for Active Names and Numbers<br>
+        <input type="radio" name="answer3" value="B" required> The Internet Corporation for Assigned Names and Numbers<br>
+        <input type="radio" name="answer3" value="C" required> The Internet Corporation for Archive Names and Numbers<br>
+        <input type="radio" name="answer3" value="D" required> The Internet Corporation for Advanced Names and Numbers<br><br>
+        <p>Question 4: What is the full form of HTTPS?</p>
+        <input type="radio" name="answer4" value="A" required> Hyper Text Transfer Protocol Secure<br>
+        <input type="radio" name="answer4" value="B" required> Hyper Text Translation Protocol Service<br>
+        <input type="radio" name="answer4" value="C" required> Hyper Text Translation Protocol Secure<br>
+        <input type="radio" name="answer4" value="D" required> Hyper Text Transfer Protocol Service <br><br>
+        <p>Question 5: Which of the following is not Country Code Top-Level Domains(cc TLDs)</p>
+        <input type="radio" name="answer5" value="A" required> .In<br>
+        <input type="radio" name="answer5" value="B" required> .cn<br>
+        <input type="radio" name="answer5" value="C" required> .de<br>
+        <input type="radio" name="answer5" value="D" required> .cat<br><br>
+        <p>Question 6: A website is a collection of</p>
+        <input type="radio" name="answer6" value="A" required> graphics<br>
+        <input type="radio" name="answer6" value="B" required> web pages<br>
+        <input type="radio" name="answer6" value="C" required> web<br>
+        <input type="radio" name="answer6" value="D" required> charts<br><br>
+        <p>Question 7: Ineternet uses:</p>
+        <input type="radio" name="answer7" value="A" required> packet switching<br>
+        <input type="radio" name="answer7" value="B" required> circuit switching<br>
+        <input type="radio" name="answer7" value="C" required> telephone switching<br>
+        <input type="radio" name="answer7" value="D" required> telex switching<br><br>
+        <p>Question 8: What does DNS stands for/</p>
+        <input type="radio" name="answer8" value="A" required> Domain Name System<br>
+        <input type="radio" name="answer8" value="B" required> Divided Name System<br>
+        <input type="radio" name="answer8" value="C" required> Distributed Name System<br>
+        <input type="radio" name="answer8" value="D" required> Domain Neural System<br><br>
+        <p>Question 9: What is a protocol?</p>
+        <input type="radio" name="answer9" value="A" required> set of actions<br>
+        <input type="radio" name="answer9" value="B" required> set of servers<br>
+        <input type="radio" name="answer9" value="C" required> set of rules<br>
+        <input type="radio" name="answer9" value="D" required> set of instances<br><br>
+        <p>Question 10: FTP stands for:</p>
+        <input type="radio" name="answer10" value="A" required> File Transfer Protocol<br>
+        <input type="radio" name="answer10" value="B" required> Fast Text Processing<br>
+        <input type="radio" name="answer10" value="C" required> File Transmission Program<br>
+        <input type="radio" name="answer10" value="D" required> Fast Transmission Processor<br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+

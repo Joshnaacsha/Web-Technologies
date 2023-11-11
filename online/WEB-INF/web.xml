@@ -1,0 +1,12 @@
+<web-app>  
+<!-- Program examservlet.java -->
+    <servlet>
+        <servlet-name>examservlet</servlet-name>
+        <servlet-class>examservlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>examservlet</servlet-name>
+        <url-pattern>/examservlet</url-pattern>
+    </servlet-mapping>
+</web-app>
